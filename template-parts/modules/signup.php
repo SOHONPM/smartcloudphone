@@ -197,7 +197,7 @@ foreach ($plans->plans as $plan) {
 <script type="text/javascript">
     $(document).ready(function() {
         $('#signlookup').submit(function() { // catch the form's submit event
-            $('#signresult').html('<img src="http://localhost/cloudphone/wp-content/uploads/2020/06/loading.gif">');
+            $('#signresult').html('<img src="https://www.smartcloudphone.com.au/wp-content/uploads/2020/06/loading.gif">');
             $('#overlay').show();
 
             $.ajax({ // create an AJAX call...
