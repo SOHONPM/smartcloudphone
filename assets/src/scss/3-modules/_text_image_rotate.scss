@@ -1,0 +1,50 @@
+.text_image_rotate-section {
+    .container {
+        padding: 50px 0;
+
+        // max-width: 100%;
+        @include breakpoint(575) {
+            padding: 50px 15px;
+        }
+
+        .wrapper {
+            display: flex;
+            height: 100%;
+
+            .content {
+                margin: auto 0;
+
+                .title {
+                    color: #072036;
+                    font-size: 2em;
+                    margin: 30px 0 0;
+                    font-weight: bold;
+
+                    // &::after {
+                    //     content: ' ';
+                    //     position: absolute;
+                    //     width: 100%;
+                    //     height: 10px;
+                    //     background: red;
+                    // }
+                }
+
+                hr {
+                    margin-top: 10px;
+                    width: 25%;
+                    text-align: left;
+                    background-color: #2680EB;
+                    border: 0;
+                    height: 5px;
+                    margin-inline-start: unset;
+                    margin-inline-end: unset;
+                }
+
+                .subtitle {
+                    color: white;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}

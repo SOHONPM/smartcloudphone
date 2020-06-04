@@ -1,0 +1,352 @@
+/* ----------------------------------------------------------------------------
+ * Structure
+ * -------------------------------------------------------------------------- */
+
+.section-padding {
+    padding: 50px 0;
+
+    @include breakpoint(767) {
+        padding: 30px 0;
+    }
+}
+
+.container {
+    max-width: 1170px;
+
+    @include min-breakpoint(1200) {
+        max-width: 1170px;
+    }
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.page-wrapper {
+    overflow: hidden;
+}
+
+.not-found {
+    min-height: 500px;
+    padding: 40px 0;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+
+    &.hide {
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &-inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        color: $primary_color;
+    }
+}
+
+/** ---------------------------------------------
+* Accessiblity
+--------------------------------------------- **/
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+
+    &:focus {
+        background-color: #eee;
+        clip: auto !important;
+        clip-path: none;
+        color: #444;
+        display: block;
+        font-size: 1em;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+        /* Above WP toolbar. */
+    }
+}
+
+/** ---------------------------------------------
+* Loader
+--------------------------------------------- **/
+/* This only works with JavaScript, 
+        if it's not present, don't show loader */
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background: url(../img/loader_ico.gif) center no-repeat #fff;
+}
+
+/* ----------------------------------------------------------------------------
+ * Typo
+ * ------------------------------------------------------------------------- */
+.module {
+    .sec-title {
+        line-height: 1;
+        color: $secondary_color;
+
+        h2 {
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------------
+ * Display
+ * ------------------------------------------------------------------------- */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+/* ----------------------------------------------------------------------------
+ * WordPress Core Styles
+ * ------------------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: darken($darker_color, 10%);
+    max-width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.textwidget img {
+    margin: 1rem 0;
+}
+
+.bypostauthor {
+    background: inherit;
+}
+
+/* ----------------------------------------------------------------------------
+ * Calendar widget
+ * ------------------------------------------------------------------------- */
+.widget_calendar {
+    display: table;
+    width: 100%;
+}
+
+#wp-calendar {
+    width: 100%;
+}
+
+#wp-calendar caption {
+    text-align: right;
+    color: $b;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#wp-calendar thead {
+    font-size: 10px;
+}
+
+#wp-calendar thead th {
+    padding-bottom: 10px;
+}
+
+#wp-calendar tbody {
+    color: $b;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#wp-calendar tbody td {
+    background: $w;
+    border: 1px solid $w;
+    text-align: center;
+    padding: 8px;
+}
+
+#wp-calendar tbody td:hover {
+    background: $w;
+}
+
+#wp-calendar tbody .pad {
+    background: none;
+}
+
+#wp-calendar tfoot #next {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#wp-calendar tfoot #prev {
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+/* ----------------------------------------------------------------------------
+ * Recommended sizes
+ * ------------------------------------------------------------------------- */
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------------------------------------------------------------------------
+ * Responsive
+ * ------------------------------------------------------------------------- */
+.wp-caption .wp-caption-text,
+.gallery-caption {
+    @include breakpoint(240) {
+        font: 300 1.4rem/1.8rem sans-serif;
+    }
+
+    @include breakpoint(320) {
+        font: 300 1.55rem/1.8 sans-serif;
+    }
+
+    @include breakpoint(480) {
+        font: 300 1.8rem/1.8 sans-serif;
+    }
+
+    @include breakpoint(768) {
+        font: 300 1.9rem/1.7 sans-serif;
+    }
+
+    @include breakpoint(1024) {
+        font: 300 2rem/3.1rem sans-serif;
+    }
+
+    @include breakpoint(1280) {
+        font: 300 2rem/3.1rem sans-serif;
+    }
+}

@@ -1,0 +1,51 @@
+.widget-area {
+	margin: 0 auto 25px auto;
+
+	@include min-breakpoint(768) {
+		margin: 0;
+	}
+	@include min-breakpoint(992) {
+		margin: 0;
+	}
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	h3 {
+		font-size: 19px;	
+	}
+	strong {
+		color: $darkerblue_color;
+	}
+
+	&.widget-about {
+		margin: 10px 0;
+
+		.widget_text {
+			margin-bottom: 10px;
+		}
+		.widget_nav_menu {
+			h3 {
+				margin: 15px 0 0 0;
+			}
+		}
+	}
+}
+.widget {
+	&-sidebar {
+    	padding: 15px 0;
+		
+		h3 {
+			font-size: 22px;
+			border-bottom: 1px solid #efeeee;
+			margin-bottom: 10px;
+		}
+        ul {
+        	li {
+        		line-height: 1.4;
+        		margin-bottom: 7px;
+        	}
+        }
+	}
+}

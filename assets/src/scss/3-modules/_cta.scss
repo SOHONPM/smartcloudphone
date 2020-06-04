@@ -1,0 +1,58 @@
+.cta_buttons-section {
+    position: relative;
+
+    &::before {
+        background: #072036D6;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: ' ';
+        opacity: .8;
+    }
+
+    .container {
+        padding: 100px 0;
+        position: relative;
+
+        @include breakpoint(767) {
+            padding: 80px 15px;
+        }
+
+        .main_title {
+            text-align: center;
+            color: #fff;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #fff;
+        }
+
+        .buttons_wrapper {
+            width: fit-content;
+            margin: 30px auto 0;
+            min-width: 500px;
+
+            @include breakpoint(600) {
+                min-width: unset;
+            }
+
+
+            .wrapper {
+                // width: max-content;
+
+                @include breakpoint(575) {
+                    margin-bottom: 10px;
+                }
+
+                a {
+                    color: #ffffff;
+                    padding: 10px 30px;
+                    border-radius: 8px;
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

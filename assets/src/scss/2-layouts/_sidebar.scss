@@ -1,0 +1,5 @@
+.sidebar {
+	@include min-breakpoint(992) {
+		padding-left: 40px;
+	}
+}

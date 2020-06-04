@@ -1,0 +1,108 @@
+/**--------------------------
+Site Footer
+---------------------------- **/
+.site-footer {
+    padding: 50px 0 0 0;
+    // background: rgba(200, 210, 235, 0.3);
+    background: #072036;
+    text-align: center;
+    color: #A7B0B8;
+
+    .textwidget {
+        p {
+            @include breakpoint(1000) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .widget-title {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    &>.container {
+        padding-bottom: 30px;
+    }
+
+    @include min-breakpoint(768) {
+        text-align: left;
+    }
+
+    .site-logo {
+        margin: 0 auto;
+
+        @include min-breakpoint(768) {
+            margin: 0;
+        }
+    }
+
+    .site-info {
+        display: none;
+
+        @include min-breakpoint(768) {
+            line-height: 21px;
+            display: block;
+            margin-top: 10px;
+        }
+
+    }
+
+
+
+    &__bottom {
+        padding: 20px 0 15px 0;
+        text-align: center;
+        background: #031627;
+
+        @include min-breakpoint(768) {
+            text-align: left;
+        }
+    }
+}
+
+.footer-navigation {
+    margin-bottom: 20px;
+
+    @include min-breakpoint(768) {
+        margin-bottom: 0;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    ul {
+        text-align: center;
+
+        @include min-breakpoint(768) {
+            text-align: left;
+        }
+
+        li {
+            display: inline-block;
+
+            @include min-breakpoint(768) {
+                display: block;
+            }
+
+        }
+    }
+}
+
+.footer-nav-extra {
+    text-align: center;
+
+    @include min-breakpoint(768) {
+        text-align: right;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+
+.copyright {
+    color: #A7B0B8;
+}

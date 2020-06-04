@@ -1,0 +1,35 @@
+#menu-social-links {
+	margin-top: 5px;
+	li {
+		display: inline-block;
+		margin-right: 7px;
+		a {
+			display: inline-block;
+		    font: normal normal normal 23px/1 FontAwesome;
+		    font-size: 1.64em;
+		    position: relative;
+			transition: all 0.3s ease;
+			color:  $darkerblue_color;
+
+			&[href*="facebook.com"]:before {
+					content: "\f082";
+			}
+			&[href*="linkedin.com"]:before {
+					content: "\f08c";
+			}
+			&[href*="instagram.com"]:before {
+					content: "\f16d";
+			}
+			&[href*="twitter.com"]:before {
+					content: "\f081";
+			}
+			&[href*="dribbble.com"]:before {
+					content: "\f17d";
+			}
+
+			&:hover {
+				color: $primary_color;
+			}
+		}
+	}
+}

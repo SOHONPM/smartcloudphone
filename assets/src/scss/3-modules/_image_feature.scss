@@ -1,0 +1,31 @@
+.image_feature-section {
+    .container {
+        padding: 50px 0;
+
+        @include breakpoint(575) {
+            padding: 50px 15px;
+        }
+
+        .main_title {
+            color: #072036;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .subtitle {
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+        .title {
+            color: #61B3FB;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .content {
+            margin-bottom: 30px;
+
+        }
+    }
+}

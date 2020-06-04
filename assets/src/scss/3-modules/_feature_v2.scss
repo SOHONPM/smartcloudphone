@@ -1,0 +1,55 @@
+.feature_v2-section {
+    .container {
+        padding: 50px 0;
+
+        @include breakpoint(575) {
+            padding: 50px 15px;
+        }
+
+        .col-md-4 {
+            margin-bottom: 50px;
+        }
+
+        a.findOutMore {
+            border: 2px solid #072036;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .button_div {
+            text-align: center;
+        }
+
+        .wrapper {
+            height: 100%;
+            border: 0 solid;
+            border-top-width: 10px;
+            // margin-bottom: 50px;
+            box-shadow: 0px 3px 6px #00000014;
+            border-radius: 3px;
+
+            .container {
+                height: 100%;
+                padding: 50px 50px;
+
+                @include breakpoint(991) {
+                    padding: 50px 15px;
+                }
+
+                p {
+                    margin: 0;
+
+                    &.title {
+                        color: #072036;
+                        font-weight: bold;
+                        font-size: 21px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}

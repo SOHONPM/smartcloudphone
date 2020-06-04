@@ -1,0 +1,98 @@
+/* ----------------------------------------------------------------------------
+ * Variables
+ * ------------------------------------------------------------------------- */
+
+/* ---------------------------------------------------
+ * Colors
+ * -------------------------------------------------- */
+
+$brand_color : #50ADFF;
+$darker_color : #56575a;
+$gray_color : #666;
+
+$w : #ffffff;
+$b : #000000;
+$primary_color : #50ADFF;
+$secondary_color : #2B4DA0;
+$dark_color : #222;
+$light_color : #78CDE6;
+$blue_color : #5b82df;
+$darkerblue_color : #0E2357;
+
+/* ---------------------------------------------------
+ * Fonts
+ * -------------------------------------------------- */
+
+
+$body_text : 'bariol',
+"Helvetica Neue",
+helvetica,
+arial,
+sans-serif;
+$body_heading: "bariol",
+"Helvetica Neue",
+helvetica,
+arial,
+sans-serif;
+$brand_fontbold : 'bariol bold',
+"Helvetica Neue",
+helvetica,
+arial,
+sans-serif;
+
+// $body_text : 'Dosis', "Helvetica Neue", helvetica, arial, sans-serif;
+// $body_heading: "Dosis", "Helvetica Neue", helvetica, arial, sans-serif;
+// $brand_fontbold : 'Dosis', "Helvetica Neue", helvetica, arial, sans-serif;
+
+/* ---------------------
+ * Line Height
+ * --------------------- */
+
+$primary_line_height : 1.4;
+$secondary_line_height : 1.5;
+$smaller_line_height : 1.2;
+
+
+
+/* ---------------------
+ * Mixin
+ * --------------------- */
+
+@mixin bgSecondary {
+    background: #C6E8DD;
+    background: rgba(198, 232, 221, 0.6)
+}
+
+@mixin headingSecondary {
+    font-size: 27px;
+    font-weight: 600;
+}
+
+@mixin headingTertiary {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@mixin sectionPaddingMedium {
+    padding: 30px 0;
+
+    @include min-breakpoint(768) {
+        padding: 50px 0;
+    }
+}
+
+@mixin sectionPaddingLarge {
+    padding: 40px 0;
+
+    @include min-breakpoint(768) {
+        padding: 70px 0;
+    }
+}
+
+@mixin sectionPaddingXLarge {
+    padding: 40px 0;
+
+    @include min-breakpoint(768) {
+        padding: 100px 0;
+    }
+}
