@@ -7,7 +7,7 @@ ini_set("display_errors", "off");
 $setup["username"] = "SmartCloudPhone";
 $setup["API_KEY"] = "hdAw16Pui7ihKLfd7rt0";
 $setup["strict"] = 1; //Allow incomplete information and minor errors
-$setup["success_URL"] = "http://voipportal.com.au/success";
+$setup["success_URL"] = "https://www.smartcloudphone.com.au/thank-you/";
 $setup["API_BASE_URL"] = "https://api.maxo.com.au/wla/?user=" . $setup["username"] . "&key=" . $setup["API_KEY"];
 $setup['plan_list_cache_file'] = 'cache_plans.txt'; //File used to keep a local cache of the plan list
 
