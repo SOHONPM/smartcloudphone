@@ -2901,6 +2901,9 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .feature_v3-section .content p{margin:0}
 #overlay .preloader,#overlay #masthead,#overlay .banner.banner__sub{display:none}
 #signlookup{margin:0 auto}
+#signlookup label.error{font-size:15px;margin-left:0 !important}
+#signlookup input#account_mobile::-webkit-outer-spin-button,#signlookup input#account_mobile::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+#signlookup input#account_mobile[type=number]{-moz-appearance:textfield}
 #signlookup p.description{font-size:14px;font-style:italic}
 #signlookup p.description::before{content:'* ';color:red}
 #signlookup a{font-size:15px}
@@ -2910,7 +2913,6 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 #signlookup input::-ms-input-placeholder{color:black}
 #signlookup input::placeholder{color:black}
 #signlookup #signresult img{width:100%}
-#signlookup label{display:block !important}
 #signlookup select{width:100%;height:50px;height:45px;padding:0 15px;margin:8px 0 !important;border-radius:5px}
 #signlookup fieldset{padding:30px !important}
 #signlookup .row{width:100%}

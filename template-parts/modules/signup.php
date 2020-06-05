@@ -177,7 +177,7 @@ require_once('streetTypes.array.php');
 $default_streets = "";
 foreach ($street_types as $key => $value) {
     if ($key == "ST") {
-        $dstreetsel = " selected";
+        $dstreetsel = "";
     } else {
         $dstreetsel = "";
     }
@@ -264,7 +264,7 @@ foreach ($plans->plans as $plan) {
         <!-- <label>First Name:</label> -->
         <div class="row">
             <div class="col col-md-6">
-                <input name="account_first_name" type="text" id="account_first_name" placeholder="First Name">
+                <input name="account_first_name" type="text" id="account_first_name" placeholder="First Name" minlength="2" required>
                 <!-- <span id="business3"><strong>Business Owner Details</strong></span> -->
                 <!-- <label>Middle Name:</label> -->
             </div>
@@ -273,17 +273,17 @@ foreach ($plans->plans as $plan) {
                     <label>Last Name:</label>
                 </div> -->
             <div class="col col-md-6">
-                <input name="account_last_name" type="text" id="account_last_name" placeholder="Last Name">
+                <input name="account_last_name" type="text" id="account_last_name" placeholder="Last Name" minlength="2" required>
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
                 <!-- <label>Email:</label> -->
-                <input name="account_email" type="text" id="account_email" placeholder="Account Email">
+                <input name="account_email" type="email" id="account_email" placeholder="Account Email" required>
             </div>
             <div class="col col-md-6">
                 <!-- <label>Mobile No.:</label> -->
-                <input name="account_mobile" type="text" id="account_mobile" placeholder="Mobile No.">
+                <input name="account_mobile" type="number" id="account_mobile" placeholder="Mobile No." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required minlength="10">
                 <em></em>
             </div>
         </div>
@@ -377,21 +377,21 @@ foreach ($plans->plans as $plan) {
         </div>
         <div class="row">
             <div class="col col-md-12">
-                <input name="account_address" type="text" id="account_address" placeholder="Postal Address (PO Box or your street address)">
+                <input name="account_address" type="text" id="account_address" required minlength="7" placeholder="Postal Address (PO Box or your street address)">
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
-                <input name="account_city" type="text" id="account_city" placeholder="City">
+                <input name="account_city" type="text" id="account_city" placeholder="City" required minlength="2">
             </div>
             <div class="col col-md-6">
-                <input name="account_post_code" type="text" id="account_post_code" placeholder="Post Code">
+                <input name="account_post_code" type="text" id="account_post_code" placeholder="Post Code" required minlength="4">
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
                 <!-- State: -->
-                <select name="account_state" id="account_state">
+                <select name="account_state" id="account_state" required>
                     <option value="" disabled selected>State</option>
                     <option value="NSW">NSW</option>
                     <option value="VIC">VIC</option>
@@ -415,7 +415,7 @@ foreach ($plans->plans as $plan) {
         <div class="row">
             <div class="col col-md-6">
 
-                <select name="ipnd_service_building_type" id="ipnd_service_building_type">
+                <select name="ipnd_service_building_type" id="ipnd_service_building_type" required>
                     <option value="" disabled selected>Building Type</option>
                     <option value="APT">Apartment</option>
                     <option value="F">Flat</option>
@@ -444,7 +444,7 @@ foreach ($plans->plans as $plan) {
                 <p class="description">eg <strong>A (For Unit 2<font color="#FF0000">A</font>)</strong></p>
             </div>
             <div class="col col-md-6">
-                <select name="ipnd_service_building_floor_type">
+                <select name="ipnd_service_building_floor_type" required>
                     <option value="" disabled selected>Floor Type</option>
                     <option value="B">Basement</option>
                     <option value="FL">Floor</option>
@@ -473,7 +473,7 @@ foreach ($plans->plans as $plan) {
                 Street Number:
                 <div class="row">
                     <div class="col col-md-5">
-                        <input name="ipnd_service_street_house_number_1" type="text" id="ipnd_service_street_house_number_1" size="5" maxlength="5">
+                        <input name="ipnd_service_street_house_number_1" type="text" id="ipnd_service_street_house_number_1" size="5" maxlength="5" required minlength="1">
                     </div>
                     <div class="col col-md-2" style="height: 60px;display: flex;align-items: center;justify-content: center;">
                         to
@@ -490,7 +490,7 @@ foreach ($plans->plans as $plan) {
         </div>
         <div class="row">
             <div class="col col-md-6">
-                <input name="ipnd_service_street_name_1" type="text" id="ipnd_service_street_name_1" size="30" maxlength="50" placeholder="Street Name">
+                <input name="ipnd_service_street_name_1" type="text" id="ipnd_service_street_name_1" size="30" maxlength="50" placeholder="Street Name" maxlength="25" required>
             </div>
             <div class="col col-md-6">
                 <select name="ipnd_service_street_type_1" id="ipnd_service_street_type_1">
@@ -528,7 +528,7 @@ foreach ($plans->plans as $plan) {
                 </select>
             </div>
             <div class="col col-md-6">
-                <input name="ipnd_service_address_post_code" type="text" id="ipnd_service_address_post_code" size="10" maxlength="10" placeholder="Postcode">
+                <input name="ipnd_service_address_post_code" type="text" id="ipnd_service_address_post_code" size="10" maxlength="10" placeholder="Postcode" required minlength="4">
                 <input name="ipnd_service_country_id" type="hidden" id="ipnd_service_country_id" value="AU" size="30" maxlength="50">
             </div>
     </fieldset>
@@ -541,15 +541,15 @@ foreach ($plans->plans as $plan) {
     <fieldset>
         <b>My Account Details</b>
         <div class="row">
-            <div class="col col-md-6"> <input name="account_username" type="text" id="account_username" maxlength="20" placeholder="Username">
+            <div class="col col-md-6"> <input name="account_username" type="text" id="account_username" maxlength="20" placeholder="Username" minlength="6" required>
                 <p class="description">(min: 6 characters including 1 number)</p>
             </div>
-            <div class="col col-md-6"> <input name="account_password" type="password" id="account_password" maxlength="20" placeholder="Password">
+            <div class="col col-md-6"> <input name="account_password" type="password" id="account_password" maxlength="20" placeholder="Password" minlength="6" required>
                 <p class="description">(min: 6 characters including 1 number)</p>
             </div>
             <div class="col col-md-12">
-                <select name="selectbusplan" id="selectbusplan">
-                    <option value="0" selected>Choose a plan!</option>
+                <select name="selectbusplan" id="selectbusplan" required>
+                    <option value="" selected>Choose a plan!</option>
                     <?= $busplans; ?>
                 </select>
             </div>
@@ -681,7 +681,7 @@ foreach ($plans->plans as $plan) {
         }
     }).validate({
         errorPlacement: function errorPlacement(error, element) {
-            element.before(error);
+            element.after(error);
         },
         rules: {
             confirm: {

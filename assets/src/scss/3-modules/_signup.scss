@@ -8,6 +8,23 @@
 }
 
 #signlookup {
+    label.error {
+        font-size: 15px;
+        margin-left: 0 !important;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input#account_mobile::-webkit-outer-spin-button,
+    input#account_mobile::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input#account_mobile[type=number] {
+        -moz-appearance: textfield;
+    }
+
     margin: 0 auto;
 
     p.description {
@@ -42,9 +59,9 @@
         width: 100%;
     }
 
-    label {
-        display: block !important;
-    }
+    // label {
+    //     display: block !important;
+    // }
 
     select {
         width: 100%;
