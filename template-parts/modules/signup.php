@@ -493,7 +493,7 @@ foreach ($plans->plans as $plan) {
                 <input name="ipnd_service_street_name_1" type="text" id="ipnd_service_street_name_1" size="30" maxlength="50" placeholder="Street Name" maxlength="25" required>
             </div>
             <div class="col col-md-6">
-                <select name="ipnd_service_street_type_1" id="ipnd_service_street_type_1">
+                <select name="ipnd_service_street_type_1" id="ipnd_service_street_type_1" required>
                     <option value="" disabled selected>Street Type</option>
                     <?= $default_streets; ?>
                 </select></div>
@@ -510,7 +510,7 @@ foreach ($plans->plans as $plan) {
                 </select>
             </div>
             <div class="col col-md-6">
-                <input name="ipnd_service_address_locality" type="text" id="ipnd_service_address_locality" size="30" maxlength="50" placeholder="City/Suburb/Town:">
+                <input name="ipnd_service_address_locality" type="text" id="ipnd_service_address_locality" size="30" maxlength="50" placeholder="City/Suburb/Town:" required>
             </div>
         </div>
         <div class="row">
