@@ -186,10 +186,15 @@ foreach ($street_types as $key => $value) {
 
 // print_r($default_streets);
 $busplans = '';
+$plan_id = array(
+    2590, 2589, 2584, 2582, 2588, 2587, 2586, 2585, 2579, 2578
+);
+sort($plans->plans);
 foreach ($plans->plans as $plan) {
-
     if ($plan->active == "1") {
-        $busplans .= '<option value="' . $plan->account_plan_id . '">' . $plan->name . ' @ $' . $plan->price . '/month </option>';
+        if (in_array($plan->account_plan_id, $plan_id)) {
+            $busplans .= '<option value="' . $plan->account_plan_id . '">' . $plan->name . ' @ $' . $plan->price . '/month </option>';
+        }
     }
 }
 ?>
