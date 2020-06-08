@@ -501,7 +501,7 @@ foreach ($array_plan as $plan) {
                 <p class="description">eg A (For Unit 2<font color="#FF0000">A</font>)</p>
             </div>
             <div class="col col-md-6">
-                <label class="required">Floor Type:</label>
+                <label class="">Floor Type:</label>
                 <select name="ipnd_service_building_floor_type" required>
                     <option value="" selected>Select Floor Type</option>
                     <option value="B">Basement</option>
