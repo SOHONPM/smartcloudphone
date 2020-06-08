@@ -8,9 +8,60 @@
 }
 
 #signlookup {
+    label:not(.error) {
+        margin-bottom: 0;
+        font-size: 15px;
+        color: #000;
+        margin-top: 15px;
+
+        &.required {
+            &::after {
+                content: ' *';
+                color: red;
+            }
+        }
+    }
+
+    p.title {
+        text-align: center;
+        position: relative;
+        margin: 30px 0 15px;
+
+        & span {
+            background: #eeeeee;
+            position: relative;
+            width: fit-content;
+            padding: 0 20px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #2a7ae3;
+        }
+    }
+
+    // p.title:after {
+    //     content: '';
+    //     width: 115px;
+    //     height: 1px;
+    //     position: absolute;
+    //     background: #a5a5a5;
+    //     top: 50%;
+    //     right: 0;
+    // }
+
+    p.title:before {
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        background: #a5a5a5;
+        top: 50%;
+        left: 0;
+    }
+
     label.error {
         font-size: 15px;
         margin-left: 0 !important;
+        padding: 0;
     }
 
     /* Chrome, Safari, Edge, Opera */
@@ -30,11 +81,11 @@
     p.description {
         font-size: 14px;
         font-style: italic;
-
-        &::before {
-            content: '* ';
-            color: red;
-        }
+        margin-bottom: 10px;
+        // &::before {
+        //     content: '* ';
+        //     color: red;
+        // }
     }
 
     a {
@@ -45,13 +96,14 @@
         width: 100%;
         margin: 0;
         padding: 0 15px;
-        margin: 8px 0 !important;
+        // margin: 8px 0 !important;
         border-radius: 5px;
         height: 45px;
         background: white;
 
         &::placeholder {
-            color: black;
+            color: #868686;
+            font-weight: 100;
         }
     }
 
@@ -69,12 +121,12 @@
         height: 50px;
         height: 45px;
         padding: 0 15px;
-        margin: 8px 0 !important;
+        // margin: 8px 0 !important;
         border-radius: 5px;
     }
 
     fieldset {
-        padding: 30px !important;
+        padding: 0 30px 30px !important;
     }
 
     .row {
@@ -247,9 +299,10 @@
     display: inline-block
 }
 
-.wizard>.content>.body input.error {
-    background: #fbe3e4;
-    border: 1px solid #fbc2c4;
+.wizard>.content>.body input.error,
+.wizard>.content>.body select.error {
+    background: #fbe3e4 !important;
+    border: 2px solid #fb7377;
     color: #8a1f11
 }
 
@@ -261,7 +314,9 @@
 .wizard>.content>.body label.error {
     color: #8a1f11;
     display: inline-block;
-    margin-left: 1.5em
+    margin-left: 1.5em;
+    padding-left: 15px;
+    font-weight: 100;
 }
 
 .wizard>.actions {

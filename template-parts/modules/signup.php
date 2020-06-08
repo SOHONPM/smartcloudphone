@@ -282,10 +282,10 @@ foreach ($array_plan as $plan) {
 <form id="signlookup" method="post" action="">
     <h3>Account Information</h3>
     <fieldset>
-        <!-- <legend>Account Holder Details</legend> -->
+        <p class="title"><span>Account Holder Details</span></p>
         <div class="row">
             <div class="col col-md-6">
-                <!-- <label>Title:</label> -->
+                <label>Title:</label>
                 <select name="account_title" id="title">
                     <option value="Dr">Dr</option>
                     <option value="Miss">Miss</option>
@@ -294,41 +294,47 @@ foreach ($array_plan as $plan) {
                 </select>
             </div>
         </div>
-        <!-- <label>First Name:</label> -->
+
         <div class="row">
             <div class="col col-md-6">
-                <input name="account_first_name" type="text" id="account_first_name" placeholder="First Name" minlength="2" required>
+                <label class="required">First Name:</label>
+                <input name="account_first_name" type="text" id="account_first_name" minlength="2" required>
                 <!-- <span id="business3"><strong>Business Owner Details</strong></span> -->
                 <!-- <label>Middle Name:</label> -->
             </div>
             <!-- <div class="col col-md-4">
                     <input name="account_middle_name" type="text" id="account_middle_name" placeholder="Middle Name">
-                    <label>Last Name:</label>
+                   
                 </div> -->
             <div class="col col-md-6">
-                <input name="account_last_name" type="text" id="account_last_name" placeholder="Last Name" minlength="2" required>
+                <label class="required">Last Name:</label>
+                <input name="account_last_name" type="text" id="account_last_name" minlength="2" required>
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
-                <!-- <label>Email:</label> -->
-                <input name="account_email" type="email" id="account_email" placeholder="Account Email" required>
+                <label class="required">Email:</label>
+                <input name="account_email" type="email" id="account_email" required>
             </div>
             <div class="col col-md-6">
-                <!-- <label>Mobile No.:</label> -->
-                <input name="account_mobile" type="number" id="account_mobile" placeholder="Mobile No." pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required minlength="10">
+                <label class="required">Mobile No.:</label>
+                <input name="account_mobile" type="number" id="account_mobile" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required minlength="10">
                 <em></em>
             </div>
         </div>
         <div class="row">
-            <div class="col col-md-6">Accounts Payable Contact:
+            <div class="col col-md-12">
+                <p class='title'><span>Add Additional Contact (Optional)</span></p>
+            </div>
+            <div class="col col-md-6">
+                <label>Accounts Payable Contact:</label>
                 <select id="selectaccounts" name="selectaccounts" onclick="javascript:showhide();">
                     <option>NO</option>
                     <option>YES</option>
                 </select>
             </div>
             <div class="col col-md-6">
-                Technical Contact:
+                <label>Technical Contact:</label>
                 <select id="selecttech" name="selecttech" onclick="javascript:showhide();">
                     <option>NO</option>
                     <option>YES</option>
@@ -336,45 +342,54 @@ foreach ($array_plan as $plan) {
             </div>
         </div>
         <div id="accounts" style="display: none;">
-            <b>Accounts Contact</b>
+            <P class="title"><span>Accounts Contact</span></p>
             <!-- <div>Full Name:</div> -->
 
             <div class="row">
                 <div class="col col-md-12">
-                    <input name="account_acc_full_name" type="text" id="account_acc_full_name" placeholder="Full Name">
+                    <label>Full Name:</label>
+                    <input name="account_acc_full_name" type="text" id="account_acc_full_name">
                 </div>
                 <div class="col col-md-6">
-                    <input name="account_acc_email" type="text" id="account_acc_email" placeholder="Email">
+                    <label>Email:</label>
+                    <input name="account_acc_email" type="text" id="account_acc_email">
                 </div>
                 <div class="col col-md-6">
-                    <input name="account_acc_phone" type="text" id="account_acc_phone" placeholder="Phone No">
+                    <label>Phone No.:</label>
+                    <input name="account_acc_phone" type="text" id="account_acc_phone">
                 </div>
             </div>
             <div class="row">
                 <div class="col col-md-6">
-                    <input name="account_acc_fax" type="text" id="account_acc_fax" placeholder="Fax No">
+                    <label>Fax No.:</label>
+                    <input name="account_acc_fax" type="text" id="account_acc_fax">
                 </div>
                 <div class="col col-md-6">
-                    <input name="account_acc_mobile" type="text" id="account_acc_mobile" placeholder="Mobile No">
+                    <label>Mobile No.:</label>
+                    <input name="account_acc_mobile" type="text" id="account_acc_mobile">
                 </div>
             </div>
         </div>
         <div id="tech" style="display: none;">
-            <b>Tech Contact</b>
+            <P class="title"><span>Tech Contact</span></p>
             <div class="row">
                 <div class="col col-md-6">
-                    <input name="account_tech_full_name" type="text" id="account_tech_full_name" placeholder="Full Name">
+                    <label>Full Name:</label>
+                    <input name="account_tech_full_name" type="text" id="account_tech_full_name">
                 </div>
                 <div class="col col-md-6">
-                    <input name="account_tech_email" type="text" id="account_tech_email" placeholder="Email">
+                    <label>Email:</label>
+                    <input name="account_tech_email" type="text" id="account_tech_email">
                 </div>
             </div>
             <div class="row">
                 <div class="col col-md-6">
-                    <input name="account_tech_phone" type="text" id="account_tech_phone" placeholder="Phone No">
+                    <label>Phone No.:</label>
+                    <input name="account_tech_phone" type="text" id="account_tech_phone">
                 </div>
                 <div class="col col-md-6">
-                    <input name="account_tech_mobile" type="text" id="account_tech_mobile" placeholder="Mobile No">
+                    <label>Mobile No.:</label>
+                    <input name="account_tech_mobile" type="text" id="account_tech_mobile">
                 </div>
             </div>
             <!-- <label for="userName-2">User name *</label>
@@ -394,36 +409,42 @@ foreach ($array_plan as $plan) {
 
     <h3>Business Information</h3>
     <fieldset>
-        <b>Business Details:</b>
+        <p class='title'><span>Business Details:</span></p>
         <div class="row">
             <div class="col col-md-12">
-                <input name="account_business_name" type="text" id="account_business_name" placeholder="Business Name">
+                <label>Business Name:</label>
+                <input name="account_business_name" type="text" id="account_business_name">
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
-                <input name="account_abn" type="text" id="account_abn" placeholder="ABN">
+                <label>ABN:</label>
+                <input name="account_abn" type="text" id="account_abn">
             </div>
             <div class="col col-md-6">
-                <input name="account_phone" type="text" id="account_phone" placeholder="Phone No">
+                <label>Phone No.:</label>
+                <input name="account_phone" type="text" id="account_phone">
             </div>
         </div>
         <div class="row">
             <div class="col col-md-12">
-                <input name="account_address" type="text" id="account_address" required minlength="7" placeholder="Postal Address (PO Box or your street address)">
+                <label class="required">Postal Address (PO Box or your street address)</label>
+                <input name="account_address" type="text" id="account_address" required minlength="7">
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
-                <input name="account_city" type="text" id="account_city" placeholder="City" required minlength="2">
+                <label class="required">City:</label>
+                <input name="account_city" type="text" id="account_city" required minlength="2">
             </div>
             <div class="col col-md-6">
+                <label class="required">Post Code:</label>
                 <input name="account_post_code" type="text" id="account_post_code" placeholder="Post Code" required minlength="4">
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
-                <!-- State: -->
+                <label class="required">State:</label>
                 <select name="account_state" id="account_state" required>
                     <option value="" disabled selected>State</option>
                     <option value="NSW">NSW</option>
@@ -437,19 +458,20 @@ foreach ($array_plan as $plan) {
                 </select>
             </div>
             <div class="col col-md-6">
+                <label>Country:</label>
                 <input name="account_country" type="text" id="account_country" value="Australia" placeholder="Country">
             </div>
         </div>
-        <b>Service Address Details</b>
+        <p class="title"><span>Service Address Details</span></p>
         <div class="r1c2">
             <div colspan="2">IPND Address: Enter the address where the VoIP service will be located.
                 These are the details emergency services will receive when you call 000.</div>
         </div>
         <div class="row">
             <div class="col col-md-6">
-
+                <label class="required">Building type:</label>
                 <select name="ipnd_service_building_type" id="ipnd_service_building_type" required>
-                    <option value="" disabled selected>Building Type</option>
+                    <option value="" selected>Select Building Type</option>
                     <option value="APT">Apartment</option>
                     <option value="F">Flat</option>
                     <option value="FY">Factory</option>
@@ -467,18 +489,21 @@ foreach ($array_plan as $plan) {
                 </select>
             </div>
             <div class="col col-md-6">
-                <input name="ipnd_service_subunit_first_number" type="text" id="ipnd_service_subunit_first_number" size="5" maxlength="5" placeholder="Sub-unit Number">
-                <p class="description">eg <strong>2 (For Unit <font color="#FF0000">2</font>A)</strong></p>
+                <label>Sub-unit Number: </label>
+                <input name="ipnd_service_subunit_first_number" type="text" id="ipnd_service_subunit_first_number" size="5" maxlength="5">
+                <p class="description">eg 2 (For Unit <font color="#FF0000">2</font>A)</p>
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
-                <input name="ipnd_service_subunit_first_number_suffix" type="text" id="ipnd_service_subunit_first_number_suffix" size="5" maxlength="1" placeholder="Sub-unit Suffix">
-                <p class="description">eg <strong>A (For Unit 2<font color="#FF0000">A</font>)</strong></p>
+                <label>Sub-unit Suffix:</label>
+                <input name="ipnd_service_subunit_first_number_suffix" type="text" id="ipnd_service_subunit_first_number_suffix" size="5" maxlength="1">
+                <p class="description">eg A (For Unit 2<font color="#FF0000">A</font>)</p>
             </div>
             <div class="col col-md-6">
+                <label class="required">Floor Type:</label>
                 <select name="ipnd_service_building_floor_type" required>
-                    <option value="" disabled selected>Floor Type</option>
+                    <option value="" selected>Select Floor Type</option>
                     <option value="B">Basement</option>
                     <option value="FL">Floor</option>
                     <option value="G">Ground Floor</option>
@@ -491,19 +516,21 @@ foreach ($array_plan as $plan) {
         </div>
         <div class="row">
             <div class="col col-md-6">
-                <input name="ipnd_service_building_floor_number" type="text" id="ipnd_service_building_floor_number" size="5" maxlength="5" placeholder="Floor Number">
-                <p class="description">eg <strong>15 (For Level<font color="#FF0000"> 15</font></strong>
-                    <font color="#000000">&nbsp;</font><strong>)</strong>
+                <label>Floor Number:</label>
+                <input name="ipnd_service_building_floor_number" type="text" id="ipnd_service_building_floor_number" size="5" maxlength="5">
+                <!-- <font color="#000000">&nbsp;</font><strong>)</strong>"> -->
+                <p class="description">eg 15 (For Level <font color="#FF0000">15</font>)
                 </p>
             </div>
             <div class="col col-md-6">
-                <input name="ipnd_service_building_floor_number_suffix" type="text" id="ipnd_service_building_floor_number_suffix" size="5" maxlength="5" placeholder="Floor Suffix">
-                <p class="description">eg <strong>leave it blank (For Level<font color="#000000"> 15</font>)</strong></p>
+                <label>Floor Suffix:</label>
+                <input name="ipnd_service_building_floor_number_suffix" type="text" id="ipnd_service_building_floor_number_suffix" size="5" maxlength="5">
+                <p class="description">eg leave it blank (For Level<font color="#000000"><strong>15</strong></font>)</p>
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
-                Street Number:
+                <label class="required">Street Number:</label>
                 <div class="row">
                     <div class="col col-md-5">
                         <input name="ipnd_service_street_house_number_1" type="text" id="ipnd_service_street_house_number_1" size="5" maxlength="5" required minlength="1">
@@ -517,24 +544,28 @@ foreach ($array_plan as $plan) {
                 </div>
             </div>
             <div class="col col-md-6">
-                Street Number Suffix:<input name="ipnd_service_street_house_first_number_suffix" type="text" id="ipnd_service_street_house_first_number_suffix" size="5" maxlength="1">
-                <p class="description">eg <strong>A (For 58<font color="#FF0000">A</font> Short St)</strong></p>
+                <label>Street Number Suffix:</label>
+                <input name="ipnd_service_street_house_first_number_suffix" type="text" id="ipnd_service_street_house_first_number_suffix" size="5" maxlength="1">
+                <p class="description">eg A (For 58<font color="#FF0000">A</font> Short St)</p>
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
-                <input name="ipnd_service_street_name_1" type="text" id="ipnd_service_street_name_1" size="30" maxlength="50" placeholder="Street Name" maxlength="25" required>
+                <label class="required">Street Name:</label>
+                <input name="ipnd_service_street_name_1" type="text" id="ipnd_service_street_name_1" size="30" maxlength="50" maxlength="25" required>
             </div>
             <div class="col col-md-6">
+                <label class="required">Street Type:</label>
                 <select name="ipnd_service_street_type_1" id="ipnd_service_street_type_1" required>
-                    <option value="" disabled selected>Street Type</option>
+                    <option value="" selected>Select Street Type</option>
                     <?= $default_streets; ?>
                 </select></div>
         </div>
         <div class="row">
             <div class="col col-md-6">
+                <label>Street Suffix:</label>
                 <select name="ipnd_service_street_suffix_1" id="ipnd_service_street_suffix_1">
-                    <option value="" disabled selected>Street Suffix</option>
+                    <option value="" selected>Select Street Suffix</option>
                     <option value="North">North</option>
                     <option value="South">South</option>
                     <option value="East">East</option>
@@ -543,13 +574,15 @@ foreach ($array_plan as $plan) {
                 </select>
             </div>
             <div class="col col-md-6">
-                <input name="ipnd_service_address_locality" type="text" id="ipnd_service_address_locality" size="30" maxlength="50" placeholder="City/Suburb/Town:" required>
+                <label class="required">City/Suburb/Town:</label>
+                <input name="ipnd_service_address_locality" type="text" id="ipnd_service_address_locality" size="30" maxlength="50" required>
             </div>
         </div>
         <div class="row">
             <div class="col col-md-6">
+                <label>State:</label>
                 <select name="ipnd_service_province_id" id="ipnd_service_province_id">
-                    <option value="" disabled selected>State</option>
+                    <option value="" selected>Select State</option>
                     <option value="NSW">New South Wales</option>
                     <option value="QLD">Queensland</option>
                     <option value="VIC">Victoria</option>
@@ -561,7 +594,8 @@ foreach ($array_plan as $plan) {
                 </select>
             </div>
             <div class="col col-md-6">
-                <input name="ipnd_service_address_post_code" type="text" id="ipnd_service_address_post_code" size="10" maxlength="10" placeholder="Postcode" required minlength="4">
+                <label class="required">Post Code:</label>
+                <input name="ipnd_service_address_post_code" type="text" id="ipnd_service_address_post_code" size="10" maxlength="10" required minlength="4">
                 <input name="ipnd_service_country_id" type="hidden" id="ipnd_service_country_id" value="AU" size="30" maxlength="50">
             </div>
     </fieldset>
@@ -572,15 +606,21 @@ foreach ($array_plan as $plan) {
         </fieldset> -->
     <h3>Billing Information</h3>
     <fieldset>
-        <b>My Account Details</b>
+        <p class='title'><span>Create My Account</span></p>
         <div class="row">
-            <div class="col col-md-6"> <input name="account_username" type="text" id="account_username" maxlength="20" placeholder="Username" minlength="6" required>
+            <div class="col col-md-6">
+                <label class="required">Username:</label>
+                <input name="account_username" type="text" id="account_username" maxlength="20" minlength="6" required>
                 <p class="description">(min: 6 characters including 1 number)</p>
             </div>
-            <div class="col col-md-6"> <input name="account_password" type="password" id="account_password" maxlength="20" placeholder="Password" minlength="6" required>
+
+            <div class="col col-md-6">
+                <label class="required">Password:</label>
+                <input name="account_password" type="password" id="account_password" maxlength="20" minlength="6" required>
                 <p class="description">(min: 6 characters including 1 number)</p>
             </div>
             <div class="col col-md-12">
+                <label class="required">Your Plan:</label>
                 <select name="selectbusplan" id="selectbusplan" required>
                     <option value="" selected>Choose a plan!</option>
                     <?= $busplans; ?>
@@ -589,17 +629,20 @@ foreach ($array_plan as $plan) {
 
         </div>
 
-        <b>Credit Card Information (Optional)</b>
+        <p class='title'><span>Credit Card Information (Optional)</span></p>
         <div class="row">
             <div class="col col-md-12">
-                <input name="creditcard_name" type="text" id="creditcard_name" size="20" placeholder="Name on Card">
+                <label>Name On Card:</label>
+                <input name="creditcard_name" type="text" id="creditcard_name" size="20">
             </div>
             <div class="col col-md-12">
-                <input name="creditcard_number" type="text" size="20" maxlength="16" placeholder="Card Number">
+                <label>Card Number:</label>
+                <input name="creditcard_number" type="text" size="20" maxlength="16">
             </div>
             <div class="col col-md-12">
+                <label>Card Type:</label>
                 <select name="creditcard_type">
-                    <option value="" disabled selected>Card Type</option>
+                    <option value="" selected>Select Card Type</option>
                     <option>Visa</option>
                     <option>MasterCard</option>
                     <option>American Express</option>
@@ -640,12 +683,13 @@ foreach ($array_plan as $plan) {
                 ?>
             </div>
         </div>
-
-        <input name="creditcard_ccv" type="text" size="5" maxlength="4" placeholder="Signature No">
+        <label>CCV No.:</label>
+        <input name="creditcard_ccv" type="text" size="5" maxlength="4">
         <p class="description">(On signature panel for Visa/Mastercard, front of card for American Express)
         </p>
+        <label>Prepaid Auto Topup Amount:</label>
         <select id="account_autotopup_amount" name="account_autotopup_amount">
-            <option value="" disabled selected>Prepaid Auto Topup Amount</option>
+            <option value="" selected> Select Prepaid Auto Topup Amount</option>
             <option value="20">$20</option>
             <option value="30">$30</option>
             <option value="40">$40</option>
