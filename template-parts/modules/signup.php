@@ -219,7 +219,6 @@ function compare($a, $b)
 }
 usort($array_plan, "compare");
 foreach ($array_plan as $plan) {
-    print_r($plan['active']);
     if ($plan['active'] == "1") {
         if (in_array($plan['account_plan_id'], $plan_id)) {
             $busplans .= '<option value="' . $plan['account_plan_id'] . '">' . $plan['name'] . ' @ $' . $plan['price'] . '/month </option>';
