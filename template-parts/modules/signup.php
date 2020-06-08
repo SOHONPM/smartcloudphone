@@ -611,13 +611,13 @@ foreach ($array_plan as $plan) {
             <div class="col col-md-6">
                 <label class="required">Username:</label>
                 <input name="account_username" type="text" id="account_username" maxlength="20" minlength="6" required>
-                <p class="description">(min: 6 characters including 1 number)</p>
+                <p class="description">(min: 6 characters)</p>
             </div>
 
             <div class="col col-md-6">
                 <label class="required">Password:</label>
                 <input name="account_password" type="password" id="account_password" maxlength="20" minlength="6" required>
-                <p class="description">(min: 6 characters including 1 number)</p>
+                <p class="description">(min: 6 characters)</p>
             </div>
             <div class="col col-md-12">
                 <label class="required">Your Plan:</label>
