@@ -1,7 +1,7 @@
 <?php
 
 //Whitelabel Basic Signup Page.
-ini_set("display_errors", "off");
+ini_set("display_errors", "on");
 
 //SETUP VARIABLES
 $setup["username"] = "SmartCloudPhone";
@@ -189,11 +189,40 @@ $busplans = '';
 $plan_id = array(
     2590, 2589, 2584, 2582, 2588, 2587, 2586, 2585, 2579, 2578
 );
-sort($plans->plans);
+// sort($plans->plans);
+// print_r($plans->plans);
+// function compare($a, $b)
+// {
+//     return strcmp($a["name"], $b["name"]);
+// }
+// usort($plans->plans, "compare");
+
+$array_plan = array();
 foreach ($plans->plans as $plan) {
     if ($plan->active == "1") {
         if (in_array($plan->account_plan_id, $plan_id)) {
-            $busplans .= '<option value="' . $plan->account_plan_id . '">' . $plan->name . ' @ $' . $plan->price . '/month </option>';
+            // $busplans .= '<option value="' . $plan->account_plan_id . '">' . $plan->name . ' @ $' . $plan->price . '/month </option>';
+            $array_plan_store = array(
+                'account_plan_id' => $plan->account_plan_id,
+                'name' => $plan->name,
+                'price' => $plan->price,
+                'active' => $plan->active
+            );
+
+            array_push($array_plan, $array_plan_store);
+        }
+    }
+}
+function compare($a, $b)
+{
+    return strcmp($a["name"], $b["name"]);
+}
+usort($array_plan, "compare");
+foreach ($array_plan as $plan) {
+    print_r($plan['active']);
+    if ($plan['active'] == "1") {
+        if (in_array($plan['account_plan_id'], $plan_id)) {
+            $busplans .= '<option value="' . $plan['account_plan_id'] . '">' . $plan['name'] . ' @ $' . $plan['price'] . '/month </option>';
         }
     }
 }
