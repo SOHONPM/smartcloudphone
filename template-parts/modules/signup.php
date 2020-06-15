@@ -699,6 +699,8 @@ foreach ($array_plan as $plan) {
             <option value="250">$250</option>
             <option value="500">$500</option>
         </select>
+        <p class="description">This amount will be debited from your nominated payment method whenever your account falls below the minimum balance
+        </p>
     </fieldset>
     <!-- <h3>Finish</h3>
         <fieldset>
