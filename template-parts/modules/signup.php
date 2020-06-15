@@ -230,7 +230,7 @@ foreach ($array_plan as $plan) {
 <script type="text/javascript">
     $(document).ready(function() {
         $('#signlookup').submit(function() { // catch the form's submit event
-            $('#signresult').html('<img src="https://www.smartcloudphone.com.au/wp-content/uploads/2020/06/loading.gif">');
+            $('#signresult').html('<img src="https://www.smartcloudphone.com.au/wp-content/uploads/2020/06/loading-1.gif">');
             $('#overlay').show();
 
             $.ajax({ // create an AJAX call...
