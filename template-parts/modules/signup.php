@@ -322,10 +322,8 @@ foreach ($array_plan as $plan) {
                 <em></em>
             </div>
         </div>
+        <p class='title'><span>Add Additional Contact (Optional)</span></p>
         <div class="row">
-            <div class="col col-md-12">
-                <p class='title'><span>Add Additional Contact (Optional)</span></p>
-            </div>
             <div class="col col-md-6">
                 <label>Accounts Payable Contact:</label>
                 <select id="selectaccounts" name="selectaccounts" onclick="javascript:showhide();">
@@ -533,13 +531,13 @@ foreach ($array_plan as $plan) {
                 <label class="required">Street Number:</label>
                 <div class="row">
                     <div class="col col-md-5">
-                        <input name="ipnd_service_street_house_number_1" type="text" id="ipnd_service_street_house_number_1" size="5" maxlength="5" required minlength="1">
+                        <input name="ipnd_service_street_house_number_1" type="number" id="ipnd_service_street_house_number_1" size="5" maxlength="5" required minlength="1">
                     </div>
                     <div class="col col-md-2" style="height: 60px;display: flex;align-items: center;justify-content: center;">
                         to
                     </div>
                     <div class="col col-md-5">
-                        <input name="ipnd_service_street_house_number_2" type="text" id="ipnd_service_street_house_number_2" size="5" maxlength="5">
+                        <input name="ipnd_service_street_house_number_2" type="number" id="ipnd_service_street_house_number_2" size="5" maxlength="5">
                     </div>
                 </div>
             </div>

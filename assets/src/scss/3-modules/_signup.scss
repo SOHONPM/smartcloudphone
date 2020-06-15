@@ -8,6 +8,8 @@
 }
 
 #signlookup {
+    padding: 50px 0;
+
     label:not(.error) {
         margin-bottom: 0;
         font-size: 15px;
@@ -26,6 +28,10 @@
         text-align: center;
         position: relative;
         margin: 30px 0 15px;
+
+        // @include breakpoint(767) {
+        //     text-align: left;
+        // }
 
         & span {
             background: #eeeeee;
@@ -56,6 +62,10 @@
         background: #a5a5a5;
         top: 50%;
         left: 0;
+
+        @include breakpoint(767) {
+            display: none;
+        }
     }
 
     label.error {
@@ -65,14 +75,14 @@
     }
 
     /* Chrome, Safari, Edge, Opera */
-    input#account_mobile::-webkit-outer-spin-button,
-    input#account_mobile::-webkit-inner-spin-button {
+    input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
         -webkit-appearance: none;
         margin: 0;
     }
 
     /* Firefox */
-    input#account_mobile[type=number] {
+    input[type=number] {
         -moz-appearance: textfield;
     }
 
@@ -127,22 +137,34 @@
 
     fieldset {
         padding: 0 30px 30px !important;
+        width: 100%;
     }
 
     .row {
         width: 100%;
+
+        @include breakpoint(767) {
+            margin: 0;
+        }
     }
 
     .col {
         padding-right: 0 !important;
+
+        @include breakpoint(767) {
+            flex-basis: auto;
+            padding: unset !important;
+        }
     }
 }
 
 .wizard,
 .tabcontrol {
     display: block;
-    width: 600px;
-    overflow: hidden
+
+    @include min-breakpoint(600) {
+        width: 600px;
+    }
 }
 
 .wizard a,
