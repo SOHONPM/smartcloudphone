@@ -5,37 +5,41 @@
 *,
 *:before,
 *:after {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    margin: 0;
 }
 
 html {
-	font-size: 62.5%;
-	height: 100%;
-	min-height: 100%;
+    font-size: 62.5%;
+    height: 100%;
+    min-height: 100%;
 }
 
 body {
-	color: $darker_color;
-	font-family: $body_text;
-	@include rem("font-size", 18);
-	font-weight: 500;
-	line-height: 1.7;
-	letter-spacing: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
+    color: $darker_color;
+    font-family: $body_text;
+    @include rem("font-size", 18);
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
 
-	&.scroll-enable {
-		overflow: inherit;
-	}
+    &.scroll-enable {
+        overflow: inherit;
+    }
 }
 
 p {
-	margin: 0 0 20px 0;
+    margin: 0 0 20px 0;
 }
 
 /*----------------
@@ -47,93 +51,93 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
-	line-height: $primary_line_height;
-	margin: 0 0 0.3em;
-	padding: 0;
-	font-family: $body_heading;
-	color: $darkerblue_color;
+    clear: both;
+    line-height: $primary_line_height;
+    margin: 0 0 0.3em;
+    padding: 0;
+    font-family: $body_heading;
+    color: $darkerblue_color;
 }
 
 h1 {
-	font-size: 38px;
+    font-size: 38px;
 }
 
 h2 {
-	font-size: 33px;
+    font-size: 33px;
 }
 
 h3 {
-	font-size: 28px;
+    font-size: 28px;
 }
 
 h4 {
-	font-size: 24px;
+    font-size: 24px;
 }
 
 h5 {
-	font-size: 20px;
+    font-size: 20px;
 }
 
 h6 {
-	font-size: 18px;
+    font-size: 18px;
 }
 
 /*----------------
  List
 ----------------*/
 ol {
-	list-style: none;
+    list-style: none;
 }
 
 ul {
-	padding: 0;
-	list-style: none;
-	margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 0;
 }
 
 ul ul {
-	padding-top: 8px;
+    padding-top: 8px;
 }
 
 li {
-	padding-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 dt {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+    margin: 0 1.5em 1.5em;
 }
 
 /*----------------
  Links
 ----------------*/
 a {
-	text-decoration: none;
-	color: $secondary_color;
+    text-decoration: none;
+    color: $secondary_color;
 
-	&:hover,
-	&:focus {
-		cursor: pointer !important;
-		outline: none;
-		text-decoration: none;
-		color: $primary_color;
-	}
+    &:hover,
+    &:focus {
+        cursor: pointer !important;
+        outline: none;
+        text-decoration: none;
+        color: $primary_color;
+    }
 }
 
 /*----------------
  Button
 ----------------*/
 button {
-	border: none;
-	outline: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	display: block;
-	padding: 0;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    padding: 0;
 }
 
 /*----------------
@@ -141,55 +145,55 @@ button {
 ----------------*/
 blockquote,
 q {
-	quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: "";
-	content: none;
+    content: "";
+    content: none;
 }
 
 /*----------------
  Table
 ----------------*/
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 thead th {
-	border-bottom: 2px solid #bbb;
-	padding-bottom: 0.5em;
+    border-bottom: 2px solid #bbb;
+    padding-bottom: 0.5em;
 }
 
 th {
-	padding: 0.4em;
-	text-align: left;
+    padding: 0.4em;
+    text-align: left;
 }
 
 tr {
-	border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 
 td {
-	padding: 0.4em;
+    padding: 0.4em;
 }
 
 /*----------------
  Forms
 ----------------*/
 label {
-	color: $darkerblue_color;
-	display: block;
-	font-weight: 800;
-	margin-bottom: 0.5em;
+    color: $darkerblue_color;
+    display: block;
+    font-weight: 800;
+    margin-bottom: 0.5em;
 }
 
 fieldset {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 input[type="text"],
@@ -208,19 +212,17 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	background: transparent;
-	background-image: -webkit-linear-gradient(
-		rgba(255, 255, 255, 0),
-		rgba(255, 255, 255, 0)
-	);
-	border: 1px solid #b7c4e3;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	display: block;
-	padding: 7px 10px;
-	width: 100%;
-	margin-bottom: 10px;
+    color: #666;
+    background: transparent;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0));
+    border: 1px solid #b7c4e3;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    padding: 7px 10px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 input[type="text"]:focus,
@@ -239,96 +241,96 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-	color: #222;
-	border-color: #333;
+    color: #222;
+    border-color: #333;
 }
 
 select {
-	border: 1px solid #bbb;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	height: 3em;
-	max-width: 100%;
+    border: 1px solid #bbb;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    height: 3em;
+    max-width: 100%;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-	margin-right: 0.5em;
+    margin-right: 0.5em;
 }
 
-input[type="radio"] + label,
-input[type="checkbox"] + label {
-	font-weight: 400;
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    font-weight: 400;
 }
 
 button,
 input[type="button"],
 input[type="submit"] {
-	background-color: $primary_color;
-	border: 0;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	color: $darkerblue_color;
-	cursor: pointer;
-	display: inline-block;
-	@include rem("font-size", 16);
-	line-height: 1;
-	padding: 1em 2em;
-	text-shadow: none;
-	-webkit-transition: background 0.2s;
-	transition: background 0.2s;
+    background-color: $primary_color;
+    border: 0;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: $darkerblue_color;
+    cursor: pointer;
+    display: inline-block;
+    @include rem("font-size", 16);
+    line-height: 1;
+    padding: 1em 2em;
+    text-shadow: none;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
 
-	&:hover,
-	&:focus {
-		background-color: $darkerblue_color;
-		color: #fff;
-	}
+    &:hover,
+    &:focus {
+        background-color: $darkerblue_color;
+        color: #fff;
+    }
 }
 
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
-	color: $secondary_color;
-	font-family: $body_text, "Helvetica Neue", helvetica, arial, sans-serif;
+    color: $secondary_color;
+    font-family: $body_text, "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 :-moz-placeholder {
-	color: $secondary_color;
-	font-family: $body_text, "Helvetica Neue", helvetica, arial, sans-serif;
+    color: $secondary_color;
+    font-family: $body_text, "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 ::-moz-placeholder {
-	color: $secondary_color;
-	opacity: 1;
-	/* Since FF19 lowers the opacity of the placeholder by default */
+    color: $secondary_color;
+    opacity: 1;
+    /* Since FF19 lowers the opacity of the placeholder by default */
 }
 
 :-ms-input-placeholder {
-	color: $secondary_color;
+    color: $secondary_color;
 }
 
 /*----------------
  Formatting
 ----------------*/
 hr {
-	background-color: #bbb;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+    background-color: #bbb;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
 }
 
 img {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 strong {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 dfn,
 cite,
 em,
 i {
-	font-style: italic;
+    font-style: italic;
 }

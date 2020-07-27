@@ -1,0 +1,27 @@
+.form_map-section {
+    .container {
+        padding: 50px 0;
+
+        form {
+            .nf-form-fields-required {
+                display: none;
+            }
+
+            .nf-field-container {
+                margin-bottom: 0;
+            }
+
+            .nf-field-label {
+                display: none;
+            }
+
+            input {
+                margin: 5px 0;
+            }
+        }
+
+        .ninja-forms-field[type='button'] {
+            width: 100%;
+        }
+    }
+}

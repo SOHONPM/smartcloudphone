@@ -1,0 +1,19 @@
+.featured-section {
+    .container {
+        padding: 50px 0;
+
+        .wrapper {
+            padding: 20px 0;
+
+            .title {
+                font-size: 25px;
+                margin: 0;
+                font-weight: bold;
+            }
+
+            .thumbnail img {
+                height: auto;
+            }
+        }
+    }
+}

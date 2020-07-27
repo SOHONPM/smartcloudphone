@@ -2633,6 +2633,7 @@ a.text-dark:hover,a.text-dark:focus{color:#121416 !important}
 @font-face{font-family:"bariol";font-style:normal;font-weight:normal;src:url("../fonts/bariol/Bariol-Regular.eot");src:url("../fonts/bariol/Bariol-Regular.eot#iefix") format("embedded-opentype"),url("../fonts/bariol/Bariol-Regular.woff") format("woff"),url("../fonts/bariol/Bariol-Regular.ttf") format("truetype"),url("../fonts/bariol/Bariol-Regular.svg#Bariol-Regular") format("svg")}
 @font-face{font-family:"bariol bold";font-style:normal;font-weight:normal;src:url("../fonts/bariol/Bariol-Bold.eot");src:url("../fonts/bariol/Bariol-Bold.eot#iefix") format("embedded-opentype"),url("../fonts/bariol/Bariol-Bold.woff") format("woff"),url("../fonts/bariol/Bariol-Bold.ttf") format("truetype"),url("../fonts/bariol/Bariol-Bold.svg#Bariol-Bold") format("svg")}
 *,*:before,*:after{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.row{margin:0}
 html{font-size:62.5%;height:100%;min-height:100%}
 body{color:#56575a;font-family:"bariol","Helvetica Neue",helvetica,arial,sans-serif;font-size:18px;font-size:1.8rem;font-weight:500;line-height:1.7;letter-spacing:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow:hidden}
 body.scroll-enable{overflow:inherit}
@@ -2984,6 +2985,37 @@ ol.linenums li{padding-left:12px;color:#bebec5;line-height:20px;text-shadow:0 1p
 .thankyou-section .wrapper h3{text-align:center;font-weight:bold;margin-bottom:50px}
 .thankyou-section .wrapper p{text-align:center;margin-bottom:70px}
 .thankyou-section .wrapper a{background:#50adff;color:white;padding:15px 30px;border-radius:8px;width:150px;text-align:center}
+.headline-section{position:relative}
+.headline-section::before{content:'';background-color:white;position:absolute;width:100%;height:100%;opacity:.8}
+.headline-section .container{padding:30px 0}
+.headline-section .container h2{font-size:40px;margin:0;border-bottom:5px solid #4ea7ef;font-weight:bold;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}
+.headline-section .container h4 span{color:#4ea7ef}
+.headline-section .container .form_title{text-align:right;padding:0 15px}
+.headline-section .container form .nf-form-fields-required{display:none}
+.headline-section .container form .nf-field-label{display:none}
+.headline-section .container form .nf-field-container{margin-bottom:0}
+.headline-section .container form .nf-error-msg.nf-error-field-errors{display:none}
+.headline-section .container .ninja-forms-field[type='button']{width:100%}
+.text-section .container{padding:80px 0;position:relative}
+.text-section h4{font-size:32px;font-weight:bold}
+.text-section.image{background-size:cover !important;position:relative !important}
+.text-section.image .container{padding:80px 0;position:relative;color:white}
+.text-section.image .container p,.text-section.image .container h4{color:#fff}
+.text-section.image::before{background-color:#072036;content:' ';position:absolute;width:100%;height:100%;opacity:.8;z-index:0}
+.form_map-section .container{padding:50px 0}
+.form_map-section .container form .nf-form-fields-required{display:none}
+.form_map-section .container form .nf-field-container{margin-bottom:0}
+.form_map-section .container form .nf-field-label{display:none}
+.form_map-section .container form input{margin:5px 0}
+.form_map-section .container .ninja-forms-field[type='button']{width:100%}
+.contact_details_features-section .container{padding:50px 0}
+.contact_details_features-section .container .icons{width:50px !important;margin:0 auto}
+.contact_details_features-section .container .title{width:20px;font-weight:bold;margin:0}
+.contact_details_features-section .container .right{text-align:right}
+.featured-section .container{padding:50px 0}
+.featured-section .container .wrapper{padding:20px 0}
+.featured-section .container .wrapper .title{font-size:25px;margin:0;font-weight:bold}
+.featured-section .container .wrapper .thumbnail img{height:auto}
 @media(prefers-reduced-motion:reduce){.form-control{-webkit-transition:none;transition:none}
 .btn{-webkit-transition:none;transition:none}
 .fade{-webkit-transition:none;transition:none}
