@@ -187,7 +187,7 @@ foreach ($street_types as $key => $value) {
 // print_r($default_streets);
 $busplans = '';
 $plan_id = array(
-    2590, 2589, 2584, 2582, 2588, 2587, 2586, 2585, 2579, 2578
+    2590, 2589, 2584, 2582, 2588, 2587, 2586, 2585, 2579, 2578, 2946
 );
 // sort($plans->plans);
 // print_r($plans->plans);
