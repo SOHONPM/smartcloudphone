@@ -239,7 +239,7 @@ foreach ($array_plan as $plan) {
                 url: $(this).attr('action'), // the file to call
                 success: function(response) { // on success..
                     $('#signresult').html(response); // update the DIV
-                    console.log(response)
+                    // console.log(response)
                 }
             });
 
