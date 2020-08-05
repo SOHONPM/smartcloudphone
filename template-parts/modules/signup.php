@@ -148,8 +148,9 @@ if ($_REQUEST["form_submitted"]) {
         die('Invalid response received from the API');
     };
 
-    echo "<script>$('#overlay').hide() </script>";
+
     if ($json["response"] == "OK") {
+        echo "<script>$('#overlay').hide() </script>";
         echo "<script>window.location = '" . $setup["success_URL"] . "';";
     } else {
         if ($json["errors"]) {
