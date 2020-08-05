@@ -10,10 +10,10 @@
                 <?php echo get_sub_field('content') ?>
                 <div class="row">
                     <div class="col-md-6">
-                        <a class='login' href=''>Login</a>
+                        <a class='login' target="_blank" href='https://voipportal.com.au/'>Login</a>
                     </div>
                     <div class="col-md-6">
-                        <a class="signup" href='/signup'>Signup</a>
+                        <a class="signup" target="_blank" href='/signup'>Signup</a>
                     </div>
                 </div>
             </div>
