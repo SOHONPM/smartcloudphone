@@ -2794,6 +2794,8 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .site-header__top .col--left{width:115px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .site-header__top .col--right{width:calc(100% - 115px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .site-header__top .col--right span{display:inline-block;margin-right:5px;font-size:16px}
+.site-header__top .col--right span a{color:#fff}
+.site-header__top .col--right span a:hover{color:#50adff}
 .site-header__top span{font-size:15px;line-height:1.2}
 .site-header__top .btn{padding:6px 15px;font-size:15px;text-transform:uppercase;color:#0e2357}
 .site-header__top .btn:hover{color:#fff}
@@ -2887,11 +2889,11 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .feature_v2-section .container .wrapper .container p{margin:0}
 .feature_v2-section .container .wrapper .container p.title{color:#072036;font-weight:bold;font-size:21px;margin-bottom:20px}
 .cta_buttons-section{position:relative}
-.cta_buttons-section::before{background:#072036D6;position:absolute;width:100%;height:100%;content:' ';opacity:.8}
+.cta_buttons-section::before{background:#072036d6;position:absolute;width:100%;height:100%;content:" ";opacity:.8}
 .cta_buttons-section .container{padding:100px 0;position:relative}
 .cta_buttons-section .container .main_title{text-align:center;color:#fff}
 .cta_buttons-section .container .subtitle{text-align:center;color:#fff}
-.cta_buttons-section .container .buttons_wrapper{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;margin:30px auto 0;min-width:500px}
+.cta_buttons-section .container .buttons_wrapper{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;margin:30px auto 0;min-width:530px}
 .cta_buttons-section .container .buttons_wrapper .wrapper a{color:#fff;padding:10px 30px;border-radius:8px;display:block;text-align:center}
 .feature_v3-section .container{padding:80px 0}
 .feature_v3-section .container hr{width:7%;-webkit-transform:rotate(90deg);transform:rotate(90deg);margin-top:30px;margin-bottom:5px;height:2px}
