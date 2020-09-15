@@ -117,3 +117,32 @@ function themezero_sanitize_link_input($input)
 }
 
 add_action('customize_register', 'themezero_customize_register');
+
+function my_custom_post_feature()
+{
+	$labels = array(
+		'name'               => _x('Features', 'post type general name'),
+		'singular_name'      => _x('Feature', 'post type singular name'),
+		'add_new'            => _x('Add New', 'book'),
+		'add_new_item'       => __('Add New Feature'),
+		'edit_item'          => __('Edit Feature'),
+		'new_item'           => __('New Feature'),
+		'all_items'          => __('All Features'),
+		'view_item'          => __('View Feature'),
+		'search_items'       => __('Search Features'),
+		'not_found'          => __('No Features found'),
+		'not_found_in_trash' => __('No Features found in the Trash'),
+		// 'parent_item_colon'  => ’,
+		'menu_name'          => 'Features'
+	);
+	$args = array(
+		'labels'        => $labels,
+		'description'   => 'Holds our features and feature specific data',
+		'public'        => true,
+		'menu_position' => 5,
+		'supports'      => array('title', 'editor', 'thumbnail', 'excerpt', 'comments'),
+		'has_archive'   => true,
+	);
+	register_post_type('feature', $args);
+}
+add_action('init', 'my_custom_post_feature');

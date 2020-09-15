@@ -4,7 +4,7 @@
             <?php
             // Define our WP Query Parameters
 
-            $the_query = new WP_Query(array('cat' => '1')) ?>
+            $the_query = new WP_Query(array('post_type' => 'feature')) ?>
             <?php
             // Start our WP Query
             while ($the_query->have_posts()) : $the_query->the_post();
