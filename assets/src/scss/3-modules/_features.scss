@@ -1,87 +1,86 @@
 .feature-section {
-    .container {
-        padding: 100px 0;
+	.container {
+		padding: 100px 0;
 
-        @include breakpoint(575) {
-            padding: 50px 15px;
-        }
+		@include breakpoint(575) {
+			padding: 50px 15px;
+		}
 
-        .feature {
-            &.row {
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: -ms-flexbox;
-                display: flex;
-            }
+		.feature {
+			&.row {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+			}
 
-            &.row>[class*='col-'] {
-                display: flex;
-                flex-direction: column;
+			&.row > [class*="col-"] {
+				display: flex;
+				flex-direction: column;
 
-                @include breakpoint(767) {
-                    margin-bottom: 20px;
-                }
+				@include breakpoint(767) {
+					margin-bottom: 20px;
+				}
 
-                .row {
-                    height: 100%;
-                }
-            }
-        }
+				.row {
+					height: 100%;
+				}
+			}
+		}
 
-        h3.main_title {
-            text-align: center;
-            font-size: 40px;
-        }
+		h3.main_title {
+			text-align: center;
+			font-size: 40px;
+		}
 
-        .subtitle {
-            font-size: 20px;
-            text-align: center;
-            margin-bottom: 50px;
-        }
+		.subtitle {
+			font-size: 20px;
+			text-align: center;
+			margin-bottom: 50px;
+		}
 
-        .wrapper {
-            border: 2px solid;
-            border-left: 2px solid;
-            border-bottom: 10px solid;
-            border-top-color: #DADCDE;
-            border-right-color: #DADCDE;
-            border-radius: 10px;
-            padding: 50px 20px 120px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            height: 100%;
+		.wrapper {
+			border: 2px solid;
+			border-left: 2px solid;
+			border-bottom: 10px solid;
+			border-top-color: #dadcde;
+			border-right-color: #dadcde;
+			border-radius: 10px;
+			padding: 50px 20px 120px;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			height: 100%;
 
-            @include breakpoint(991) {
-                padding: 50px 15px 120px;
-            }
+			@include breakpoint(991) {
+				padding: 50px 15px 120px;
+			}
 
-            i {
-                margin-bottom: 20px;
+			i {
+				margin-bottom: 20px;
 
-                &:before {
-                    font-size: 60px;
-                }
+				&:before {
+					font-size: 60px;
+				}
 
-                &.below-icon {
-                    &::before {
-                        position: absolute;
-                        font-size: 200px;
-                        right: -45px;
-                        bottom: -25px;
-                    }
-                }
-            }
+				&.below-icon {
+					&::before {
+						position: absolute;
+						font-size: 200px;
+						right: -45px;
+						bottom: -25px;
+					}
+				}
+			}
 
-            .title {
-                font-weight: bold;
-                font-size: 25px;
+			.title {
+				font-weight: bold;
+				font-size: 22px;
 
-                @include breakpoint(991) {
-                    font-size: 20px;
-                }
-
-            }
-        }
-    }
+				@include breakpoint(991) {
+					font-size: 20px;
+				}
+			}
+		}
+	}
 }

@@ -2864,15 +2864,15 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .image_text-section .container .wrapper .content .content{color:#000;font-size:1.2em;line-height:1.5}
 .feature-section .container{padding:100px 0}
 .feature-section .container .feature.row{display:-webkit-box;display:-ms-flexbox;display:flex}
-.feature-section .container .feature.row>[class*='col-']{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
-.feature-section .container .feature.row>[class*='col-'] .row{height:100%}
+.feature-section .container .feature.row>[class*="col-"]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.feature-section .container .feature.row>[class*="col-"] .row{height:100%}
 .feature-section .container h3.main_title{text-align:center;font-size:40px}
 .feature-section .container .subtitle{font-size:20px;text-align:center;margin-bottom:50px}
 .feature-section .container .wrapper{border:2px solid;border-left:2px solid;border-bottom:10px solid;border-top-color:#dadcde;border-right-color:#dadcde;border-radius:10px;padding:50px 20px 120px;text-align:center;position:relative;overflow:hidden;height:100%}
 .feature-section .container .wrapper i{margin-bottom:20px}
 .feature-section .container .wrapper i:before{font-size:60px}
 .feature-section .container .wrapper i.below-icon::before{position:absolute;font-size:200px;right:-45px;bottom:-25px}
-.feature-section .container .wrapper .title{font-weight:bold;font-size:25px}
+.feature-section .container .wrapper .title{font-weight:bold;font-size:22px}
 .image_feature-section .container{padding:50px 0}
 .image_feature-section .container .main_title{color:#072036;font-weight:bold;margin:0}
 .image_feature-section .container .subtitle{color:#000;margin-bottom:30px}
@@ -3918,7 +3918,7 @@ ol.linenums li{padding-left:12px;color:#bebec5;line-height:20px;text-shadow:0 1p
 .site-nav .navbar-collapse{margin-top:20px;position:absolute;z-index:5;width:100%;background:#f4f4f7;left:0;padding:10px 15px}
 .hero-section .container .wrapper .content .form{margin-top:50px}
 .hero-section .container .wrapper .content h1{font-size:30px;margin:0}
-.feature-section .container .feature.row>[class*='col-']{margin-bottom:20px}
+.feature-section .container .feature.row>[class*="col-"]{margin-bottom:20px}
 .cta_buttons-section .container{padding:80px 15px}
 .feature_v3-section .container{padding:80px 15px}
 .feature_v3-section .container hr{width:7%;margin-bottom:5px}
