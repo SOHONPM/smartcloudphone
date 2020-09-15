@@ -3000,6 +3000,8 @@ ol.linenums li{padding-left:12px;color:#bebec5;line-height:20px;text-shadow:0 1p
 .headline-section .container form .nf-field-label{display:none}
 .headline-section .container form .nf-field-container{margin-bottom:0}
 .headline-section .container form .nf-error-msg.nf-error-field-errors{display:none}
+.headline-section .container form input[type="submit"]{background:#09c177;border:1px solid #09c177}
+.headline-section .container form input[type="submit"]:hover{background:white;color:#09c177}
 .headline-section .container .ninja-forms-field[type="button"]{width:100%}
 .text-section .container{padding:80px 0;position:relative}
 .text-section h4{font-size:32px;font-weight:bold}

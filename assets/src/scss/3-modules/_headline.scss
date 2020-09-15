@@ -60,6 +60,16 @@
 			.nf-error-msg.nf-error-field-errors {
 				display: none;
 			}
+
+			input[type="submit"] {
+				background: #09c177;
+				border: 1px solid #09c177;
+
+				&:hover {
+					background: white;
+					color: #09c177;
+				}
+			}
 		}
 
 		.ninja-forms-field[type="button"] {
