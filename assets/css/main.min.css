@@ -3006,11 +3006,12 @@ ol.linenums li{padding-left:12px;color:#bebec5;line-height:20px;text-shadow:0 1p
 .text-section.image .container p,.text-section.image .container h4{color:#fff}
 .text-section.image::before{background-color:#072036;content:' ';position:absolute;width:100%;height:100%;opacity:.8;z-index:0}
 .form_map-section .container{padding:50px 0}
+.form_map-section .container h5{font-size:25px}
 .form_map-section .container form .nf-form-fields-required{display:none}
 .form_map-section .container form .nf-field-container{margin-bottom:0}
 .form_map-section .container form .nf-field-label{display:none}
 .form_map-section .container form input{margin:5px 0}
-.form_map-section .container .ninja-forms-field[type='button']{width:100%}
+.form_map-section .container .ninja-forms-field[type="button"]{width:100%}
 .contact_details_features-section .container{padding:50px 0}
 .contact_details_features-section .container .icons{width:50px !important;margin:0 auto}
 .contact_details_features-section .container .title{width:20px;font-weight:bold;margin:0}
