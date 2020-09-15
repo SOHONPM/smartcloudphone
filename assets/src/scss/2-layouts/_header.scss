@@ -115,12 +115,18 @@
 
 		.call_us {
 			background: $brand_color;
-			color: white;
+			color: #fff;
 			padding: 5px 0;
 			border-radius: 8px;
 			margin-left: 15px;
 			width: 150px;
 			text-align: center;
+			border: 2px solid $brand_color;
+
+			&:hover {
+				background: #fff;
+				color: $brand_color;
+			}
 
 			@include breakpoint(767) {
 				display: none;

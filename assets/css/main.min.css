@@ -2801,7 +2801,8 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .site-header__top .btn:hover{color:#fff}
 .site-header__middle{padding:20px 0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-bottom:1px solid #efebeb;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;position:relative}
 .site-header__middle>div{display:-webkit-box;display:-ms-flexbox;display:flex}
-.site-header__middle .call_us{background:#50adff;color:white;padding:5px 0;border-radius:8px;margin-left:15px;width:150px;text-align:center}
+.site-header__middle .call_us{background:#50adff;color:#fff;padding:5px 0;border-radius:8px;margin-left:15px;width:150px;text-align:center;border:2px solid #50adff}
+.site-header__middle .call_us:hover{background:#fff;color:#50adff}
 .site-logo{width:300px}
 .site-logo img{width:auto;height:auto}
 .site-nav{width:calc(100% - 130px);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}
